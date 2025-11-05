@@ -18,7 +18,7 @@ const ArtistsList = () => {
           >
             <img
               src={artist.image}
-              className="w-40 h-40 rounded-full object-cover border-2 border-gray-500 hover:scale-110 duration-200"
+              className="w-20 h-20 lg:h-40 lg:w-40 rounded-full object-cover border-2 border-gray-500 hover:scale-110 duration-200"
             />
             <p className="mt-2 text-lg text-white">{artist.name}</p>
           </div>

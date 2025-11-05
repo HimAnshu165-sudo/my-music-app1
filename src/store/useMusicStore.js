@@ -1,19 +1,21 @@
 import { create } from "zustand";
 
+const API_URL = "https://my-json-api-mdkx.onrender.com";
 export const useMusicStore = create((set) => ({
   artists: [],
   songs: [],
   filteredSongs: [],
   currentSong: null,
   selectedArtist: null,
-
+  
   fetchData: async () => {
-    const resArtists = await fetch("https://my-json-api-mdkx.onrender.com/artists");
-    const resSongs = await fetch("https://my-json-api-mdkx.onrender.com/songs");
-    const artists = await resArtists.json();
-    const songs = await resSongs.json();
-    set({ artists, songs, filteredSongs: songs });
-  },
+  const resArtists = await fetch(`${API_URL}/artists`);
+  const resSongs = await fetch(`${API_URL}/songs`);
+  const artists = await resArtists.json();
+  const songs = await resSongs.json();
+  set({ artists, songs, filteredSongs: songs });
+},
+
 
   playSong: (song) => set({ currentSong: song }),
 
