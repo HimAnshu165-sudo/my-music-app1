@@ -8,8 +8,8 @@ export const useMusicStore = create((set) => ({
   selectedArtist: null,
 
   fetchData: async () => {
-    const resArtists = await fetch("http://localhost:3000/artists");
-    const resSongs = await fetch("http://localhost:3000/songs");
+    const resArtists = await fetch("https://my-json-api-mdkx.onrender.com/artists");
+    const resSongs = await fetch("https://my-json-api-mdkx.onrender.com/songs");
     const artists = await resArtists.json();
     const songs = await resSongs.json();
     set({ artists, songs, filteredSongs: songs });
