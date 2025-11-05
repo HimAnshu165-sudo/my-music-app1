@@ -1,0 +1,96 @@
+{
+  "artists": [
+    { "id": 1, "name": "Pritam", "image": "/assets/pritam.jpg" },
+    { "id": 2, "name": "Dino James", "image": "/assets/dino.jpeg" },
+    { "id": 3, "name": "Shreya Ghoshal", "image": "/assets/shreya.jpg" },
+    {"id":4,"name": "Arijit Singh", "image": "/assets/arijit.jpeg" },
+    {"id":5,"name": "Atif Aslam", "image": "/assets/atifaslam.jpeg" },
+    {"id":6,"name": "Talha Yunus", "image": "/assets/talha.jpeg" }
+  ],
+  "songs": [
+    {
+      "id": 1,
+      "name": "Lehra Do",
+      "audio": "/assets/Songs/LehraDo.mp3",
+      "cover": "/assets/song1.jpeg",
+      "artistId":4
+    },
+    {
+      "id": 2,
+      "name": "Yaadein",
+      "audio": "/assets/Songs/Yaadein.mp3",
+      "cover": "/assets/Yaadien.jpeg",
+      "artistId":2
+    },
+    {
+      "id": 3,
+      "name": "Yeh Ishq Hai",
+      "audio": "/assets/Songs/Yeh Ishq Hai.mp3",
+      "cover": "/assets/YehIshqHai.jpg",
+      "artistId":1
+    },
+    {
+      "id": 4,
+      "name": "Siddhat",
+      "audio": "/assets/Songs/Siddhat.mp3",
+      "cover": "/assets/Siddhat.jpg",
+      "artistId":4
+    },
+    {
+      "id": 5,
+      "name": "Tujhe Kitna Chane Lage..",
+      "audio": "/assets/Songs/TujheKitna.mp3",
+      "cover": "/assets/song4.jpeg",
+      "artistId":5
+    },
+    {
+      "id": 6,
+      "name": "Thanks a Lot",
+      "audio": "/assets/Songs/Thanksalot.mp3",
+      "cover": "/assets/Thanks.jpeg",
+      "artistId":2
+    },
+    {
+      "id": 7,
+      "name": "Nidarr",
+      "audio": "/assets/Songs/Nidarr.mp3",
+      "cover": "/assets/Nidarr.jpg",
+      "artistId":2
+    },
+    {
+      "id": 8,
+      "name":"Sajni Re",
+      "audio": "/assets/Songs/SajniRe.mp3",
+      "cover": "/assets/song5.jpeg",
+      "artistId":5
+    },
+{
+      "id": 9,
+      "name":"Naina",
+      "audio": "/assets/Songs/Naina.mp3",
+      "cover": "/assets/song2.jpeg",
+      "artistId":4
+    },
+    {
+      "id": 10,
+      "name": "Hancock",
+      "audio": "/assets/Songs/Hancock.mp3",
+      "cover": "/assets/Hancock.jpg",
+      "artistId":2
+    },
+    {
+      "id": 11,
+      "name":"Tum Hi Ho",
+      "audio": "/assets/Songs/Tum hi ho.mp3",
+      "cover": "/assets/song3.jpeg",
+      "artistId":4
+    },
+    {
+      "id": 12,
+      "name":"Dooriyan",
+      "audio": "/assets/Songs/Dooriyan.mp3",
+      "cover": "/assets/Dooriyan.jpeg",
+      "artistId":2
+    }
+  ]
+}
