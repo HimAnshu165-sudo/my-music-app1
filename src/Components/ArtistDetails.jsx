@@ -30,7 +30,7 @@ const ArtistDetailsPage = () => {
           <li
             key={song.id}
             onClick={() => playSong(song)}
-            className={`flex justify-between items-center p-2 rounded cursor-pointer hover:bg-red-700 ${
+            className={`flex justify-between items-center p-2 rounded cursor-pointer hover:bg-green-200 ${
               currentSong?.id === song.id ? "bg-green-600" : ""
             }`}
           >
