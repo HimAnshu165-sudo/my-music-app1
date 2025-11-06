@@ -25,12 +25,12 @@ const ArtistDetailsPage = () => {
       </div>
 
       <h3 className="mt-13 text-2xl font-semibold">Songs</h3>
-      <ul className="mt-8 space-y-2">
+      <ul className="mt-8 space-y-2 max-h-64 overflow-y-auto no-scrollbar pr-2">
         {artistSongs.map((song) => (
           <li
             key={song.id}
             onClick={() => playSong(song)}
-            className={`flex justify-between items-center p-2 rounded cursor-pointer hover:bg-green-200 ${
+            className={`flex justify-between items-center rounded cursor-pointer hover:bg-gray-300 ${
               currentSong?.id === song.id ? "bg-green-600" : ""
             }`}
           >

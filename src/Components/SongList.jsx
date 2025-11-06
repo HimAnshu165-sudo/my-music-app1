@@ -16,7 +16,7 @@ const SongsList = () => {
           onClick={() => playSong(song)}
           className="cursor-pointer p-3 rounded-lg shrink-0 w-[30%] lg:w-[14%]"
         >
-          <img src={song.cover} className="rounded-full object-cover border-2 border-gray-500 hover:scale-110 duration-200 w-25 h-25 md:h-35 md:w-35 lg:h-30 lg:w-30 mb-2" />
+          <img src={song.cover} className="rounded-full object-cover border-2 border-gray-500 hover:scale-110 duration-200 w-20 h-20 md:h-35 md:w-35 lg:h-30 lg:w-30 mb-2" />
           <p className="text-center text-lg">{song.name}</p>
         </div>
       ))}
