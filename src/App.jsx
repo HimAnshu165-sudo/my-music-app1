@@ -17,10 +17,10 @@ function App() {
 
   return (
     <Router>
-      <div className="h-screen bg-black text-white flex gap-4 p-3 ">
+      <div className="h-screen bg-black text-white flex gap-4  ">
         <SideBaar />
 
-        <div className="flex flex-col `h-[100%]` gap-11 bg-[#1b1a1a] w-full p-4 rounded-lg">
+        <div className="flex flex-col h-screen lg:h-full  gap-11 bg-[#1b1a1a] w-full p-5 rounded-lg">
           <Navbaar />
 
           <Routes>

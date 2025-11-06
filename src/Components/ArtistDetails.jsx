@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useMusicStore } from "../store/useMusicStore";
-import MediaPlayer from "./MediaPlayer";
 
 const ArtistDetailsPage = () => {
   const { id } = useParams();

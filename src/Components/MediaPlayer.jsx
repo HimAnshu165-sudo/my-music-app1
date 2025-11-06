@@ -16,14 +16,14 @@ const MediaPlayer = () => {
 
   if (!currentSong) {
     return (
-      <div className="fixed bottom-5 left-1/2 -translate-x-1/2 p-3 text-white">
+      <div className="fixed bottom-30 left-1/2 -translate-x-1/2 p-3 text-white">
         No song playing...
       </div>
     );
   }
 
   return (
-    <div className="fixed bottom-16 lg:bottom-3 left-1/2 lg:left-1/3 -translate-x-1/2 p-3 rounded-md w-[87%] lg:w-[50%] text-white">
+    <div className="fixed bottom-30 lg:bottom-3 left-1/2 lg:left-1/3 -translate-x-1/2 p-3 rounded-md w-[87%] lg:w-[50%] text-white">
       <div className="flex justify-between items-center gap-4">
         <div className="flex gap-3 items-center">
           <img src={currentSong.cover} className="h-10 w-10 rounded-full" alt="" />
