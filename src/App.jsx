@@ -20,7 +20,7 @@ function App() {
       <div className="h-screen bg-black text-white flex gap-4 p-3 ">
         <SideBaar />
 
-        <div className="flex flex-col gap-11 bg-[#1b1a1a] w-full p-4 rounded-lg">
+        <div className="flex flex-col h-screen gap-11 bg-[#1b1a1a] w-full p-4 rounded-lg">
           <Navbaar />
 
           <Routes>

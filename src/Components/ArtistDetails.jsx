@@ -1,10 +1,13 @@
 import { useParams } from "react-router-dom";
 import { useMusicStore } from "../store/useMusicStore";
+import MediaPlayer from "./MediaPlayer";
 
 const ArtistDetailsPage = () => {
   const { id } = useParams();
   const artists = useMusicStore((state) => state.artists);
   const songs = useMusicStore((state) => state.songs);
+  const playSong = useMusicStore((state) => state.playSong);
+  const currentSong = useMusicStore((state) => state.currentSong);
 
   const artist = artists.find((a) => a.id === Number(id));
   const artistSongs = songs.filter((s) => s.artistId === Number(id));
@@ -22,14 +25,22 @@ const ArtistDetailsPage = () => {
       </div>
 
       <h3 className="mt-13 text-2xl font-semibold">Songs</h3>
-      <ul className="mt-8 space-y-2 ">
+      <ul className="mt-8 space-y-2">
         {artistSongs.map((song) => (
-          <ul className="flex justify-around items-center">
-            <li key={song.id}>{song.name}</li>
-            <li key={song.id}>
-              <img className="h-15 w-15 rounded-full" src={song.cover} alt={song.cover} />
-            </li>
-          </ul>
+          <li
+            key={song.id}
+            onClick={() => playSong(song)}
+            className={`flex justify-between items-center p-2 rounded cursor-pointer hover:bg-red-700 ${
+              currentSong?.id === song.id ? "bg-green-600" : ""
+            }`}
+          >
+            <span>{song.name}</span>
+            <img
+              className="h-15 w-15 rounded-full"
+              src={song.cover}
+              alt={song.cover}
+            />
+          </li>
         ))}
       </ul>
     </div>
