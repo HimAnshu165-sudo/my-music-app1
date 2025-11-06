@@ -14,7 +14,7 @@ const SongsList = () => {
         <div
           key={song.id}
           onClick={() => playSong(song)}
-          className="cursor-pointer p-3 rounded-lg shrink-0 w-[50%] lg:w-[14%]"
+          className="cursor-pointer p-3 rounded-lg shrink-0 w-[35%] lg:w-[14%]"
         >
           <img src={song.cover} className="rounded-full object-cover border-2 border-gray-500 hover:scale-110 duration-200 w-24 h-24 md:h-35 md:w-35 lg:h-30 lg:w-30 mb-2" />
           <p className="text-center text-lg">{song.name}</p>
