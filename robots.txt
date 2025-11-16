@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://my-music-app1-dmbohtcvs-himanshu165-sudos-projects.vercel.app/sitemap.xml

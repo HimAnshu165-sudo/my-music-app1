@@ -1,7 +1,7 @@
 import { HiOutlineSearch } from "react-icons/hi";
 import { FaSpotify } from "react-icons/fa";
 import { useMusicStore } from "../store/useMusicStore";
-import {useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbaar = () => {
   const searchSongs = useMusicStore((state) => state.searchSongs);
@@ -9,7 +9,10 @@ const Navbaar = () => {
   return (
     <section className="text-white flex justify-between items-center">
       <div className="flex items-center gap-2 text-4xl font-semibold">
-        <FaSpotify className="w-6 h-6 lg:h-10 lg:w-full text-green-500 cursor-pointer" onClick={()=>navigate("/")} />
+        <FaSpotify
+          className="w-6 h-6 lg:h-10 lg:w-full text-green-500 cursor-pointer"
+          onClick={() => navigate("/")}
+        />
         <span className="text-sm lg:text-2xl">Spotify</span>
       </div>
       <div className="flex items-center gap-2 font-semibold px-4 rounded-full">

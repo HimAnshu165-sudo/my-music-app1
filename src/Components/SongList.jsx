@@ -6,21 +6,24 @@ const SongsList = () => {
 
   return (
     <section>
-    <div>
+      <div>
         <h1 className="text-2xl font-bold mb-5">Popular Songs</h1>
-    </div>
-    <div className="w-full overflow-x-auto flex flex-nowrap gap-4 py-2 px-2 no-scrollbar">
-      {songs.map((song) => (
-        <div
-          key={song.id}
-          onClick={() => playSong(song)}
-          className="cursor-pointer p-3 rounded-lg shrink-0 w-[35%] lg:w-[14%]"
-        >
-          <img src={song.cover} className="rounded-full object-cover border-2 border-gray-500 hover:scale-110 duration-200 w-24 h-24 md:h-35 md:w-35 lg:h-30 lg:w-30 mb-2" />
-          <p className="text-center text-lg">{song.name}</p>
-        </div>
-      ))}
-    </div>
+      </div>
+      <div className="w-full overflow-x-auto flex flex-nowrap gap-4 py-2 px-2 no-scrollbar">
+        {songs.map((song) => (
+          <div
+            key={song.id}
+            onClick={() => playSong(song)}
+            className="cursor-pointer p-3 rounded-lg shrink-0 w-[35%] lg:w-[14%]"
+          >
+            <img
+              src={song.cover}
+              className="rounded-full object-cover border-2 border-gray-500 hover:scale-110 duration-200 w-24 h-24 md:h-35 md:w-35 lg:h-30 lg:w-30 mb-2"
+            />
+            <p className="text-center text-lg">{song.name}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
